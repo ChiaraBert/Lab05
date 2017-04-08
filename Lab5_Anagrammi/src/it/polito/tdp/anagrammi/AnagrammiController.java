@@ -13,9 +13,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-
-public class AnagrammiController {
-
+									
+public class AnagrammiController {  
+									
 	private Model m;
     @FXML
     private ResourceBundle resources;
@@ -50,15 +50,15 @@ public class AnagrammiController {
 			txtCorretti.setText("Inserire solo caratteri alfabetici");
 			return;}
     	
-    	if(m.CercaParola(parola)==false){
+    	/*if(m.CercaParola(parola)==false){
 			txtCorretti.appendText("Parola non presente nel dizionario\n");
 			return;
-		}
+		}*/
     	
     	String ris="";
     	String ris2="";
     	
-    	m.calcola(parola);
+    	m.risolvi(parola);
     	
     	if(!m.getParoleGiuste().isEmpty()){
     	for(String s: m.getParoleGiuste()){

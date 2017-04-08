@@ -33,7 +33,7 @@ public class ParolaDAO {
 				
 		} catch (SQLException e) {
 			e.printStackTrace();
-			//throw new RuntimeException("Errore Db");
+			throw new RuntimeException("Errore Db");
 		}
 		return trovato;	
 		// TODO
